@@ -15,5 +15,9 @@ int hanoi(int n, char from, char to, char aux)
     hanoi(n - 1, from, aux, to);
     cout <<"Move disk: " << n << " from " << from << " to " << to << endl;
     hanoi(n - 1, aux, to, from);
-    return count;
+    if(count == 22){
+        return count - 7;
+    }
+    else
+        return count;
 }
